@@ -13,11 +13,13 @@ specifiers:
   '@storybook/addon-interactions': ^6.5.0-alpha.62
   '@storybook/addon-links': ^6.5.0-alpha.62
   '@storybook/addon-postcss': ^2.0.0
+  '@storybook/addons': ^6.4.21
   '@storybook/builder-webpack5': ^6.5.0-alpha.62
   '@storybook/manager-webpack5': ^6.5.0-alpha.62
   '@storybook/preset-scss': ^1.0.3
   '@storybook/react': ^6.5.0-alpha.62
   '@storybook/testing-library': ^0.0.9
+  '@storybook/theming': ^6.4.21
   '@testing-library/react': ^13.0.1
   '@types/jest': ^27.4.1
   '@types/react': ^17.0.44
@@ -60,11 +62,13 @@ devDependencies:
   '@storybook/addon-interactions': 6.5.0-alpha.62_6627d66156befd5774ba02504e41a2a5
   '@storybook/addon-links': 6.5.0-alpha.62_react-dom@18.0.0+react@18.0.0
   '@storybook/addon-postcss': 2.0.0_webpack@5.72.0
+  '@storybook/addons': 6.4.21_react-dom@18.0.0+react@18.0.0
   '@storybook/builder-webpack5': 6.5.0-alpha.62_6627d66156befd5774ba02504e41a2a5
   '@storybook/manager-webpack5': 6.5.0-alpha.62_6627d66156befd5774ba02504e41a2a5
   '@storybook/preset-scss': 1.0.3_45810e6cd79edca43b92e49a81c5c4da
   '@storybook/react': 6.5.0-alpha.62_d20c68a02bfdc6164532efab40e0bec1
   '@storybook/testing-library': 0.0.9_react-dom@18.0.0+react@18.0.0
+  '@storybook/theming': 6.4.21_react-dom@18.0.0+react@18.0.0
   '@testing-library/react': 13.0.1_react-dom@18.0.0+react@18.0.0
   '@types/jest': 27.4.1
   '@types/react': 17.0.44
