@@ -1,0 +1,8 @@
+.test {
+  @apply px-[30px];
+
+  background-color: red;
+  &-test {
+    background-color: blue;
+  }
+}
