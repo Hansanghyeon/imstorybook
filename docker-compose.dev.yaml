@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  web:
+    image: httpd
+    volumes:
+      - ./storybook-static:/usr/local/apache2/htdocs/httpd
+    deploy:
+      placement:
+        constraints:
+          - node.hostname == ${HOSTNAME}
+      labels:
+        - traefik.enable=true
+        - traefik.http.routers.imweb-202204__${PROJECT_NAME}.entrypoints=websecure
+        - traefik.http.routers.imweb-202204__${PROJECT_NAME}.rule=Host(`${DOMAIN}`)
+        - traefik.http.routers.imweb-202204__${PROJECT_NAME}.tls.certresolver=leresolver
+        - traefik.http.services.imweb-202204__${PROJECT_NAME}.loadbalancer.server.port=3000
+        - traefik.http.routers.imweb-202204__${PROJECT_NAME}.middlewares=imweb-auth@file
+
+networks:
+  default:
+    external:
+      name: proxy-main
