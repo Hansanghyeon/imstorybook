@@ -4,7 +4,8 @@ services:
   web:
     image: httpd
     volumes:
-      - ./storybook-static:/usr/local/apache2/htdocs/httpd
+      - ./storybook-static:/usr/share/nginx/html
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
     deploy:
       placement:
         constraints:
@@ -14,7 +15,7 @@ services:
         - traefik.http.routers.imweb-202204__${PROJECT_NAME}.entrypoints=websecure
         - traefik.http.routers.imweb-202204__${PROJECT_NAME}.rule=Host(`${DOMAIN}`)
         - traefik.http.routers.imweb-202204__${PROJECT_NAME}.tls.certresolver=leresolver
-        - traefik.http.services.imweb-202204__${PROJECT_NAME}.loadbalancer.server.port=3000
+        - traefik.http.services.imweb-202204__${PROJECT_NAME}.loadbalancer.server.port=80
         - traefik.http.routers.imweb-202204__${PROJECT_NAME}.middlewares=imweb-auth@file
 
 networks:
