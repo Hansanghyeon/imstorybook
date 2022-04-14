@@ -2,7 +2,7 @@ import React from "react";
 import Table from "./Table";
 
 export default {
-  title: "ReactComponentLibrary/Table",
+  title: "component/Table",
 };
 
 
