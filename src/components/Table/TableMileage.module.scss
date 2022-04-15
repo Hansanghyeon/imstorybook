@@ -1,0 +1,60 @@
+.table__mileage {
+  @apply text-[#757575] w-full border-y border-[#ddd];
+}
+
+.table__mileage-header {
+  @apply items-center text-[#757575] w-min sticky top-0 min-w-full;
+  @apply leading-none;
+  @extend .table__mileage-cell;
+
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      grid-column: #{$i};
+    }
+  }
+}
+
+.table__mileage-body {
+  @apply border-b last:border-b-0 w-min min-w-full;
+  @apply grid gap-y-[1px] grid-rows-[42px] md:grid-rows-[60px];
+  background-color: #eee;
+}
+
+.table__mileage-cell {
+  @apply py-[8px] px-[13px] flex items-center min-w-min whitespace-nowrap w-full;
+  background-color: #fff;
+
+
+  // 1 col line
+  &:first-child, &:nth-child(5n + 1) {
+    @apply pl-[16px];
+    @apply md:pl-[24px];
+    justify-content: flex-start;
+  }
+  // 2 col line
+  &:nth-child(2), &:nth-child(5n + 2) {
+    justify-content: flex-end;
+  }
+  // 3 col line
+  &:nth-child(3), &:nth-child(5n + 3) {
+    justify-content: flex-end;
+  }
+  // 4 col line
+  &:nth-child(4), &:nth-child(5n + 4) {
+    justify-content: flex-end;
+  }
+  // 5 col line
+  &:nth-child(5n) {
+    @apply pr-[16px];
+    @apply md:pr-[24px];
+    @apply min-w-[53px] md:min-w-[100px];
+
+    justify-content: flex-end;
+  }
+}
+
+.table__responsive_sticky {
+  &-cell {
+    padding: 8px 12px;
+  }
+}
