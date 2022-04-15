@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'im-icon';
+  src:  url('fonts/im-icon.eot?qpern3');
+  src:  url('fonts/im-icon.eot?qpern3#iefix') format('embedded-opentype'),
+    url('fonts/im-icon.ttf?qpern3') format('truetype'),
+    url('fonts/im-icon.woff?qpern3') format('woff'),
+    url('fonts/im-icon.svg?qpern3#im-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.im-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'im-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.im-ico-close:before {
+  content: "\e916";
+}
+.im-ico-increment:before {
+  content: "\e917";
+}
+.im-ico-download:before {
+  content: "\e918";
+}
+.im-ico-extinction:before {
+  content: "\e919";
+}
+.im-ico-remaining:before {
+  content: "\e91a";
+}
+.im-ico-decrement:before {
+  content: "\e91b";
+}
+.im-ico-arrow-left:before {
+  content: "\e91c";
+}
+.im-ico-imweb:before {
+  content: "\e91d";
+}
+.im-ico-chains:before {
+  content: "\e913";
+}
+.im-ico-check-solid:before {
+  content: "\e914";
+}
+.im-ico-alert-solid:before {
+  content: "\e915";
+}
+.im-ico-outline-alert:before {
+  content: "\e911";
+}
+.im-ico-under:before {
+  content: "\e912";
+}
+.im-ico-circle-delete:before {
+  content: "\e910";
+}
+.im-ico-equals-plain:before {
+  content: "\e90d";
+}
+.im-ico-minus-plain:before {
+  content: "\e908";
+}
+.im-ico-plus-plain:before {
+  content: "\e909";
+}
+.im-ico-equals-solid:before {
+  content: "\e90a";
+}
+.im-ico-minus-solid:before {
+  content: "\e90b";
+}
+.im-ico-plus-solid:before {
+  content: "\e90c";
+}
+.im-ico-circle-arrow-right:before {
+  content: "\e90e";
+}
+.im-ico-mappin:before {
+  content: "\e90f";
+}
+.im-ico-check:before {
+  content: "\e907";
+}
+.im-ico-arrow-long-left:before {
+  content: "\e905";
+}
+.im-ico-arrow-long-right:before {
+  content: "\e906";
+}
+.im-ico-delete:before {
+  content: "\e904";
+}
+.im-ico-settings:before {
+  content: "\e901";
+}
+.im-ico-global:before {
+  content: "\e902";
+}
+.im-ico-bell:before {
+  content: "\e903";
+}
+.im-ico-more:before {
+  content: "\e900";
+}
