@@ -16,8 +16,8 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest",
-    "sb": "start-storybook -p 6006",
-    "build-sb": "build-storybook"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
